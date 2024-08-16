@@ -5,12 +5,6 @@
     <meta charset="utf-8">
     <style>
       /* Global Styles */
-      a {
-        color: #f00;
-      }
-      h2 {
-        font-size: 30px;
-      }
       html, body {
         margin: 0;
         padding: 0;
@@ -18,6 +12,9 @@
       h1 {
         font-size: 7vw;
         margin-top: 0;
+      }
+      a {
+        color: #f00;
       }
 
       /* Hero Styles */
@@ -29,53 +26,66 @@
       /* Social Styles */
       .social-link {
         background-color: rgba(150, 150, 150, 0.5);
-        color: #00f;
+        border-radius: 99px;
+        box-sizing: border-box;
+        color: #fff;
         display: inline-block;
-        height: 36px;
-        width: 36px;
+        font-family: helvetica, arial, sans;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5em;
+        line-height: 1;
+        padding-top: 0.85em;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 2.5em;
       }
       .social-list {
         list-style: none;
         padding: 0;
+        text-align: center;
       }
       .social-list > li {
         display: inline-block;
+        margin: 0 0.5em;
       }
       
       /* Bio Styles */
       .bio-wrapper {
         font-size: 24px;
+        margin: auto;
+        max-width: 960px;
         overflow: hidden;
-      }
-      .bio-wrapper::after {
-        visibility: hidden;
-        display: block;
-        font-size: 0;
-        content: " ";
-        clear: both;
-        height: 0;
       }
       .bio-box {
         border: 1px solid #000;
+        border-color: #000 #000 #f00;
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
-        padding: 2%;
-        width: 25%;
+        margin: 40px 1% 0;
+        padding: 0 2% 2%;
+        width: 23%;
       }
       .bio-box h3 {
+        color: #000;
         font-size: 1.5em;
+        margin: -40px 0 1em;
+        text-align: center;
+      }
+      .bio-box img {
+        width: 100%;
       }
       .bio-copy {
         font-size: 1em;
+        line-height: 1.5;
       }
       .bio-copy a {
         color: #090;
       }
 
       /* Test Styles */
-      
-
     </style>
   </head>
   <body>
@@ -83,22 +93,22 @@
       <h1>I'm an h1</h1>
       <ul class="social-list">
         <li>
-          <a href="https://example.com/" class="social-link">Link</a>
+          <a href="https://example.com/" class="social-link">Fb</a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Link</a>
+          <a href="https://example.com/" class="social-link">Tw</a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Link</a>
+          <a href="https://example.com/" class="social-link">Gh</a>
         </li>
       </ul>
     </div>
     <h2>I'm an h2</h2>
-
     <div class="bio-wrapper">
       <div class="bio-box">
+        <img src="images/kitten.jpg">
         <h3>Michael Hartl</h3>
-        <a href="https://twitter.com/mhartl"  class="social-link">here</a>
+        <a href="https://twitter.com/mhartl"  class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             Known for his dazzling charm, rapier wit, and unrivaled humility,
@@ -106,8 +116,11 @@
             <a href="https://www.railstutorial.org/">Ruby on Rails
             Tutorial</a> and principal author of the
             <a href="https://learnenough.com/">
-            Learn Enough to Be Dangerous</a> introductory sequence. Michael
-            is also notorious as the founder of
+            Learn Enough to Be Dangerous</a> introductory sequence.
+            </p>
+
+            <p>
+            Michael is also notorious as the founder of
             <a href="http://tauday.com/">Tau Day</a> and author of
             <a href="http://tauday.com/tau-manifesto"><em>The Tau
             Manifesto</em></a>, but rumors that he's secretly a supervillain
@@ -115,10 +128,10 @@
           </p>
         </div>
       </div>
-
       <div class="bio-box">
+        <img src="images/kitten.jpg">
         <h3>Lee Donahoe</h3>
-        <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+        <a href="https://twitter.com/leedonahoe" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             When he's not literally swimming with sharks or hunting powder stashes on
@@ -128,10 +141,10 @@
           </p>
         </div>
       </div>
-
       <div class="bio-box">
+        <img src="images/kitten.jpg">
         <h3>Nick Merwin</h3>
-        <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+        <a href="https://twitter.com/nickmerwin" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             You may have seen him shredding guitar live with Capital Cities on Jimmy
@@ -141,15 +154,14 @@
           </p>
         </div>
       </div>
-
       <div class="bio-box">
+        <img src="images/kitten.jpg">
         <h3>??</h3>
         <p>
           The Future
         </p>
       </div>
     </div>
-
     <p>
       Learn Enough to Be Dangerous is a leader in the movement to teach the
       world <em>technical sophistication</em>, which includes both "hard
@@ -164,8 +176,8 @@
       <a href="https://learnenough.com/#email_list">sign up for our official
       email list</a> now.
     </p>
-      <h3>Background</h3>
-      <p>
+    <h3>Background</h3>
+    <p>
       Learn Enough to Be Dangerous is an outgrowth of the
       <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a> and the
       <a href="https://www.softcover.io/">Softcover publishing platform</a>.
@@ -177,6 +189,5 @@
       Other related tutorials can be found at
       <a href="https://learnenough.com/">learnenough.com</a>.
     </p>
-
   </body>
 </html>
